@@ -46,7 +46,7 @@ from functools import reduce
 
 SUBSTR_LEN = 13
 
-with open('./prob8_input.txt') as fi:
+with open('../input_files/prob8_input.txt') as fi:
     input_data = fi.read().strip().replace('\n', '')
 
 max_product = 0

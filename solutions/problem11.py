@@ -1,4 +1,4 @@
-with open('./prob11_input.txt') as file:
+with open('../input_files/prob11_input.txt') as file:
     data = file.readlines()
 
 matrix = []
