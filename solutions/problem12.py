@@ -19,7 +19,7 @@ def tri_number():
     
     while count <= DIVISORS:
         count = count_divisior(n)
-        if count == DIVISORS:
+        if count > DIVISORS:
             return n
             
         n = (t * (t + 1)) // 2
@@ -30,3 +30,7 @@ def tri_number():
     
 print(timeit.timeit("print(tri_number())", globals=globals(), number=1))
 
+"""
+    Answer:76576500
+    Time Taken: 7.798 Hours
+"""

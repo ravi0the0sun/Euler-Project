@@ -3,7 +3,7 @@ import timeit
 STARTING_N = 1000000
 
 def longest_chain(n):
-    long_len = 1
+    long_len = 1  
     number = 1
     def count_chain(n):
         length = 1
