@@ -4,11 +4,8 @@ def factorial(n):
     return n * factorial(n - 1)
 
 def sum_of_digits(n):
-    sum = 0
-    while n > 0:
-        sum = sum + n % 10
-        n = n // 10
-
-    return sum
+    if n > 0:
+        return n % 10 + sum_of_digits(n // 10)
+    return n
 
 print(sum_of_digits(factorial(100)))
