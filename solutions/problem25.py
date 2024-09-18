@@ -1,13 +1,13 @@
 DIGITS = 1000
 
-"""
-    RecursionError: maximum recursion depth exceeded while getting the str of an object
-"""
-
 def fib(n, p, index):
     if len(str(n)) > DIGITS - 1:
         return index
     return fib(n + p, n, index + 1)
+
+"""
+    RecursionError: maximum recursion depth exceeded while getting the str of an object
+"""
 
 def fib():
     n = 0
