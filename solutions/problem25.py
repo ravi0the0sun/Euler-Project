@@ -10,7 +10,7 @@ def fib(n, p, index):
 """
 
 def fib():
-    n = 0
+    n = 0 
     p = 1
     index = 0
     while len(str(n)) < DIGITS:

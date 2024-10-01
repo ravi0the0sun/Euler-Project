@@ -1,6 +1,6 @@
 import timeit
 
-with open('../input_files/prob18_input.txt') as fi:
+with open('../input_files/prob67_input.txt') as fi:
     DATA = fi.read().strip().replace("\n", ",").split(",")
     INPUT_DATA = []
     for index, item in enumerate(DATA):

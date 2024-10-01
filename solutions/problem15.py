@@ -30,5 +30,17 @@ def calc_paths(grid):
         return dfs(path[0]) + dfs(path[1])
         
     return dfs(grid[0])
-        
-print(timeit.timeit('print(calc_paths(grid_builder((GRID_LEN + 1) ** 2)))', globals=globals(), number=1))
+
+"""
+    Answer: 137846528820
+    Time Taken: 28.882 Hours
+"""        
+
+# print(timeit.timeit('print(calc_paths(grid_builder((GRID_LEN + 1) ** 2)))', globals=globals(), number=1))
+
+def count_routes(m, n):
+    if n == 0 or m == 0:
+        return 1
+    return count_routes(m, n - 1) + count_routes(m - 1, n)
+
+print(count_routes(20, 20))
