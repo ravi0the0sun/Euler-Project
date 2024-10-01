@@ -14,7 +14,7 @@ def largest_sum(array):
         if index == 0:
             return curr_line[0] + max(prev_line[0], prev_line[1])
         return count_sum(array[index - 1], [a + max(prev_line[i], prev_line[i + 1]) for i, a in enumerate(curr_line)], index - 1)
-    return count_sum(array[len(array) - 2], array[len(array) - 1], len(array) - 2)
+    return count_sum(array[-2], array[-1], len(array) - 2)
 
 
 print(largest_sum(INPUT_DATA))
